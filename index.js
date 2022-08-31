@@ -2,6 +2,7 @@
 const express = require('express');
 const app = express();
 const port = 3000;
+const p2 = require("./power2");
 const fs = require('fs');
 
 app.get('/', function (req, res) {
@@ -10,9 +11,9 @@ app.get('/', function (req, res) {
         res.end();
 })
 
-// app.get('/isPrime/:number', function (req, res) {
-//     res.status(200).send(primes.isPrime(req.params.number));
-// })
+app.get('/power2/:number', function (req, res) {
+    res.status(200).send(p2.power2(req.params.number).toString());
+})
 
 
 
