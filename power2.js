@@ -1,5 +1,5 @@
 exports.power2 = (number) => {
-    return Math.pow(result,2);
+    return Math.pow(number,2);
 }
 
 
